@@ -1,0 +1,214 @@
+* {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 150%;
+}
+
+body {
+    display: flex;
+    margin: 0 2% 0 5%;
+    height: 100vh;
+    background: #F3F5FC;
+}
+
+#logo{
+    height: fit-content;
+    width: 70%;
+    padding: 2% 0 0 0;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+}
+
+#primeiro {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 80%;
+    margin: 0 0 0 10%;
+}
+
+#texto {
+    color: #0A3871;
+    text-transform: lowercase;
+    border: none;
+    width: 100%;
+    padding: 2% 5% 2% 2%;
+    resize: none;
+    background: none;
+    height: 60vh;
+}
+
+#texto:focus {
+    box-shadow: 0 0 0 0;
+    outline: none;
+}
+
+#primeiro .legenda {
+    color: #495057;
+    font-size: 18px;
+}
+
+.botoes {
+    display: flex;
+    margin-top: 2%;
+    gap: 20px;
+}
+
+#primeiro #criptografa{
+    height: 67px;
+    width: 50%;
+    color: white;
+    background: #0A3871;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    cursor: pointer;
+}
+
+#primeiro #descriptografa {
+    height: 67px;
+    width: 50%;
+    color: #0A3871;
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    cursor: pointer;
+}
+
+/* Agora é só direita */
+
+#recebe {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 93%;
+    width: 30%;
+    background: #ffffff;
+    margin-top: 2%;
+    border-radius: 26px;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+}
+
+#mensagem {
+    background-image: url(Imagens/High\ quality\ products\ 1\ 1.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    color: #0A3871;
+    height: 85%;
+    resize: none;
+    border-radius: 26px;
+    text-align: center;
+}
+
+::placeholder { color: #0A3871;}
+#mensagem:focus {
+    outline: none;
+}
+
+#recebe .copiar {
+    align-self: center;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer;
+    height: 67px;
+    width: 90%;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 480px) {
+
+    
+    body {
+        flex-wrap: wrap;
+        margin: 0 2% 0 2%;
+    }
+
+    #primeiro {
+        width: 100%;
+        margin: 0 0 0 1%;
+    }
+
+    #primeiro .legenda {
+        font-size: 15px;
+    }
+
+    .botoes {
+        flex-wrap: wrap;
+        margin-top: 2%;
+    }
+    
+    #primeiro #descriptografa, #primeiro #criptografa {
+        width: 100%;
+    }
+
+    #recebe {
+        width: 100%;
+        height: 50%;
+    }
+
+    #mensagem {
+        height: 50%;
+        background-image: none;
+    }
+
+    #recebe .copiar {
+        margin-top: 20%;
+        height: 40px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    body {
+        flex-wrap: wrap;
+        margin: 0 2% 0 2%;
+    }
+
+    main {
+        height: fit-content;
+    }
+
+    #primeiro {
+        width: 100%;
+        height: 40%;
+        margin: 5% 0 0 1%;
+    }
+
+    #texto {
+        height: 35vh;
+    }
+
+    #primeiro .legenda {
+        font-size: 15px;
+    }
+
+    .botoes {
+        margin-top: 2%;
+    }
+    
+    #primeiro #descriptografa, #primeiro #criptografa {
+        width: 50%;
+    }
+
+    #recebe {
+        width: 100%;
+        height: 30%;
+    }
+
+    #mensagem {
+        height: 80%;
+        
+    }
+
+    #recebe .copiar {
+        margin-top: 5%;
+        height: 40px;
+    }
+}

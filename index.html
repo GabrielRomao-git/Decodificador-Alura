@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="Imagens/A.svg">
+    <title>Challenge Codificador</title>
+</head>
+<body>
+    <main>
+        <div id="logo">
+            <h1><img src="Imagens/A.svg" alt="Logo-Alura-tamanho médio"></h1>
+        </div>  
+        <section id="primeiro">
+            
+            <textarea id="texto" placeholder="Digite seu texto"></textarea>
+            
+            <h6 class="legenda"><img src="Imagens/Vector.svg"> Apenas letras minúscula e sem acento.</h6>
+            <div class="botoes">
+                <button id="criptografa" onclick="btnCriptografa()">Criptografar</button>
+                <button id="descriptografa" onclick="btnDescriptografa()">Descriptografar</button>
+            </div>    
+        </section>
+    </main>
+
+    <section id="recebe">
+        <textarea id="mensagem" cols="20" rows="10"></textarea>
+        <button class="copiar" onclick="copiar()">Copiar</button>
+    </section>
+    <script src="script.js"></script>  
+</body>
+</html>
